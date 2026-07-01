@@ -1,1 +1,18 @@
+/*BEGIN Xbox One Controller Styling*/
+.controller.xbox {
+    background: url(base.svg);
+}
+.xbox .bumper {
+    background: url(bumper.svg);
+}
 
+.xbox .button {
+    background: url(abxy.svg);
+}
+
+.xbox .face {
+    background: url(dpad.svg);
+    position: absolute;
+    opacity: 0;
+}
+/*END Xbox One Controller Styling*/
