@@ -12,6 +12,30 @@
     background: url(abxy.png) no-repeat;
 }
 
+.xbox .a {
+    background-position: 0 0;
+    top: 108px;
+    left: 55px;
+}
+
+.xbox .b {
+    background-position: -49px 0;
+    top: 58px;
+    right: 0px;
+}
+
+.xbox .x {
+    background-position: -98px 0;
+    top: 58px;
+    left: 4px;
+}
+
+.xbox .y {
+    background-position: -148px 0;
+    left: 55px;
+    top: 7px;
+}
+
 .xbox .face {
     background: url(dpad.png) no-repeat;
 }
