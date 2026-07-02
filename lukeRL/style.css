@@ -1,6 +1,6 @@
 /*BEGIN Xbox One Controller Styling*/
 .controller.xbox {
-    background: url(base.svg) no-repeat;
+    background: url(base.png) no-repeat;
     height: 630px;
     width: 750px;
     /*    margin-left: -375px;
@@ -46,7 +46,7 @@
 .xbox .bumper {
     width: 170px;
     height: 61px;
-    background: url(bumper.svg) no-repeat;
+    background: url(bumper.png) no-repeat;
     opacity: 0;
 }
 
@@ -140,7 +140,7 @@
 
 .xbox .button {
     position: absolute;
-    background: url(abxy.svg) no-repeat;
+    background: url(abxy.png) no-repeat;
     width: 48px;
     height: 48px;
 }
@@ -214,7 +214,7 @@
 }
 
 .xbox .face {
-    background: url(dpad.svg) no-repeat;
+    background: url(dpad.png) no-repeat;
     position: absolute;
     opacity: 0;
 }
