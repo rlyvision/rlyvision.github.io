@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="https://rlyvision.github.io/assets/style.css">
     <link rel="shortcut icon" href="https://rlyvision.github.io/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://rlyvision.github.io/assets/favicon.ico" type="image/x-icon">
+    <style>
+        .project-card.no-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-card.no-image .project-info {
+            width: 100%;
+            padding: 1.5rem;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .position-dropdown {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: 2px solid #3a6cf4;
+            border-radius: 8px;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .position-dropdown:hover {
+            background: #3a6cf4;
+            color: #fff;
+        }
+        .project-card.hidden {
+            display: none;
+        }
+    </style>
     <title>Hamza</title>
 </head>
 <body>
@@ -17,7 +51,8 @@
         <nav class="navigation">
             <a href="#services">Things i do</a>
            <a href="#projects">Projects</a>
-           <a href="#contact">Contact</a> 
+           <a href="#experience">Experience</a>
+           <a href="#contact">Contact</a>
         </nav>
     </header>
     
@@ -85,6 +120,130 @@
         </div>
     </section>
 
+    <section class="projects experience" id="experience">
+        <h2 class="title">Experience</h2>
+        <div class="filter-container">
+            <select id="position-filter" class="position-dropdown">
+                <option value="all">All Positions</option>
+                <option value="developer">Developer</option>
+                <option value="admin">Admin</option>
+                <option value="community-manager">Community Manager</option>
+                <option value="staff">Staff</option>
+                <option value="trial-staff">Trial Staff</option>
+                <option value="freestyler">Freestyler</option>
+            </select>
+        </div>
+        <div class="content">
+            <div class="project-card no-image" data-position="developer">
+                <div class="project-info">
+                    <p class="project-category">Developer</p>
+                    <strong class="project-title">
+                        <span>Hebnix</span>
+                        <a href="https://hebnix.com" class="Download" target="_blank">Website</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="developer">
+                <div class="project-info">
+                    <p class="project-category">Developer</p>
+                    <strong class="project-title">
+                        <span>BondoMod</span>
+                        <a href="https://discord.gg/tUHVxGJCnN" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="developer">
+                <div class="project-info">
+                    <p class="project-category">Web Developer</p>
+                    <strong class="project-title">
+                        <span>Orix</span>
+                        <a href="https://discord.gg/SbWk3Rh8n" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="admin">
+                <div class="project-info">
+                    <p class="project-category">Admin</p>
+                    <strong class="project-title">
+                        <span>Team Septile</span>
+                        <a href="https://discord.gg/B6XRDGDJGy" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-position="community-manager">
+                <div class="project-image">
+                    <img src="https://rlyvision.github.io/assets/images/bk.png" />
+                </div><div class="project-info">
+                    <p class="project-category">Community Manager</p>
+                    <strong class="project-title">
+                        <span>BK Clan</span>
+                        <a href="https://discord.gg/2BgHgH7ue" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-position="staff">
+                <div class="project-image">
+                    <img src="https://rlyvision.github.io/assets/images/aster.png" />
+                </div><div class="project-info">
+                    <p class="project-category">Staff</p>
+                    <strong class="project-title">
+                        <span>Team Aster</span>
+                        <a href="https://discord.gg/umJ6AG9Y7J" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-position="staff">
+                <div class="project-image">
+                    <img src="https://rlyvision.github.io/assets/images/valas.png" />
+                </div><div class="project-info">
+                    <p class="project-category">Staff</p>
+                    <strong class="project-title">
+                        <span>Team Valas</span>
+                        <a href="https://discord.gg/yWTp6pGJkG" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="staff">
+                <div class="project-info">
+                    <p class="project-category">Staff</p>
+                    <strong class="project-title">
+                        <span>Jack Zou</span>
+                        <a href="https://www.youtube.com/@Jack_Zou_RL" class="Download" target="_blank">Youtube</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="staff">
+                <div class="project-info">
+                    <p class="project-category">Staff</p>
+                    <strong class="project-title">
+                        <span>NanoRL</span>
+                        <a href="https://www.youtube.com/@Nanorl9" class="Download" target="_blank">Youtube</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card" data-position="trial-staff">
+                <div class="project-image">
+                    <img src="https://rlyvision.github.io/assets/images/vortex.png" />
+                </div><div class="project-info">
+                    <p class="project-category">Trial Staff</p>
+                    <strong class="project-title">
+                        <span>Team Vortex</span>
+                        <a href="https://discord.gg/D6XURHdUYd" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card no-image" data-position="freestyler">
+                <div class="project-info">
+                    <p class="project-category">Freestyler</p>
+                    <strong class="project-title">
+                        <span>Team Nayro</span>
+                        <a href="https://discord.gg/D6XURHdUYd" class="Download" target="_blank">Discord</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cards contact" id="contact">
         <h2 class="title">Contact</h2>
         <div class="content">
@@ -105,6 +264,24 @@
         <div class="social-icons"></div>
     </footer>
 
+    <script>
+        document.getElementById('position-filter').addEventListener('change', function() {
+            const selectedPosition = this.value;
+            const cards = document.querySelectorAll('.experience .project-card');
+
+            cards.forEach(card => {
+                if (selectedPosition === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    if (card.getAttribute('data-position') === selectedPosition) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
