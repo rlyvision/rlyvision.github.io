@@ -41,6 +41,110 @@
         .project-card.hidden {
             display: none;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 2rem !important;
+            }
+
+            header .navigation {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: #000d1a;
+                padding: 4rem 2rem 2rem;
+                transition: right 0.3s ease;
+                z-index: 999;
+            }
+
+            header .navigation a {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+            }
+
+            .main h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .main h3 {
+                font-size: 1rem !important;
+            }
+
+            .title {
+                font-size: 1.8rem !important;
+            }
+
+            .content {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .card, .project-card {
+                width: 90% !important;
+                max-width: 400px !important;
+                margin: 1rem 0 !important;
+            }
+
+            .position-dropdown {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+                width: 90%;
+                max-width: 300px;
+            }
+
+            .filter-container {
+                margin: 1rem 0;
+            }
+
+            .project-image img {
+                max-height: 200px;
+                object-fit: cover;
+            }
+
+            .main-btn {
+                font-size: 0.9rem !important;
+                padding: 0.6rem 1.5rem !important;
+            }
+
+            .footer {
+                padding: 1rem !important;
+            }
+
+            .footer-title {
+                font-size: 0.9rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main h2 {
+                font-size: 1.3rem !important;
+            }
+
+            .main h3 {
+                font-size: 0.9rem !important;
+            }
+
+            .title {
+                font-size: 1.5rem !important;
+            }
+
+            .card, .project-card {
+                width: 95% !important;
+            }
+
+            .position-dropdown {
+                font-size: 0.85rem;
+            }
+
+            header .logo {
+                font-size: 1.3rem !important;
+            }
+        }
     </style>
     <title>Hamza</title>
 </head>
